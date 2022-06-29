@@ -12,7 +12,45 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Fraunces', serif;
-    font-family: 'Montserrat', sans-serif;
     background-color: var(--Cream);
+    font-size: 14px;
+}
+main{
+    max-width: 1440px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.card{
+    width: 480px;
+    background-color: var(--White);
+    display: flex;
+    border-radius: 9px;
+}
+.img img{
+    width: 100%;
+}
+.text{
+    padding: 2em;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 1em;
+}
+.product{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: var(--Very-dark-blue);
+}
+.info{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 1em;
+    line-height: 1.5;
 }
