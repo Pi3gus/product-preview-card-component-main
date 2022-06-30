@@ -14,6 +14,8 @@
 body{
     background-color: var(--Cream);
     font-size: 14px;
+    display: grid;
+    place-items: center;
 }
 main{
     max-width: 1440px;
@@ -22,16 +24,18 @@ main{
     height: 100vh;
 }
 .card{
-    width: 480px;
+    width: 700px;
     background-color: var(--White);
     display: flex;
     border-radius: 9px;
+    overflow: hidden;
 }
 .img img{
     width: 100%;
+    display: block;
 }
 .text{
-    padding: 2em;
+    padding: 1em;
 }
 .title{
     font-family: 'Montserrat', sans-serif;
@@ -53,4 +57,19 @@ main{
     color: var(--Dark-grayish-blue);
     margin-bottom: 1em;
     line-height: 1.5;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price h2{
+    color: var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
+    font-weight: 700 ;
+}
+.price p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through var(--Very-dark-blue);
 }
