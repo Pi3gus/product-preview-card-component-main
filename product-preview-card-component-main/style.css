@@ -30,17 +30,20 @@ main{
     display: flex;
     border-radius: 9px;
     overflow: hidden;
-
 }
-.img img{
+.img{
+    width: 50%;
+}
+.desktop-img{
     width: 100%;
     display: block;
 }
 .content{
-    width: 90%;
+    width: 40%;
+    margin: 0 auto;
 }
 .text{
-    padding: 2em;
+    padding: 1.8em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -54,9 +57,10 @@ main{
     letter-spacing: 0.2em;
     margin-bottom: 1em;
 }
-.product{
+.product h1{
     font-family: 'Fraunces', serif;
     font-weight: 700;
+    font-size: xx-large;
     margin-bottom: 1em;
     color: var(--Very-dark-blue);
 }
@@ -101,4 +105,14 @@ main{
 }
 .btn img{
     margin-right: 1em;
+}
+.mobile-img{
+    display: none;
+}
+@media only screen and (max-width: 375px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
